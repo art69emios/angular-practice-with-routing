@@ -1,0 +1,15 @@
+<div class="category">
+   <div *ngFor="let categor of categories">
+      <label [for]="categor">{{categor}}</label><br>
+      <input type="radio" name="categor" [id]="categor" (click)="filter(categor)" [value]="categor">
+   </div>
+</div>
+<div class="grocery">
+   <div class="grocery1" *ngFor="let product of products" >
+      <p>Category: {{product.category}}.</p>
+      <p>Brand: {{product.brand}}</p>
+      <img src="{{product.thumbnail}}" alt="">
+      <p>Description: {{product.description}}</p>
+      <p>Price: {{product.price}}$</p>
+   </div>
+</div>

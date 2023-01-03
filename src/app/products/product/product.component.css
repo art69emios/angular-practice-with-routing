@@ -1,0 +1,22 @@
+.category{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   justify-items: center;
+}
+.grocery{
+   display: flex;
+   width: 100%;
+   flex-wrap: wrap;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   gap: 5%;
+}
+
+.grocery1{
+   width: 15%;
+   border: 1px solid #000;
+}
+.grocery img{
+   width: 200px;
+}

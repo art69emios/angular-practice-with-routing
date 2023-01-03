@@ -1,0 +1,13 @@
+<div class="forma">
+<p>log works!</p>
+   <label >
+      Login:
+      <input type="text" #userName (input)="getUserVal(userName)">
+   </label>
+   <label >
+      Password:
+      <input type="text" #password (input)="getPassVal(password)">
+   </label><br><br>
+      <button (click)="logIn()" >Check</button><br>
+      <p class="err">{{error}}</p>
+</div>
